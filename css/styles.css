@@ -1,0 +1,90 @@
+/**
+ * Basic styling
+ */
+body {
+  font-family: "lucida grande", "lucida sans unicode", lucida, "Helvetica Neue", helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 1.1em;
+  color: #17191a;
+  background-color: #111;
+}
+
+article {
+  position: absolute;
+  top: 0px;
+  visibility: hidden;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  color: #17191a;
+  word-break: break-word;
+}
+article h1 {
+  font-size: 1.999em;
+}
+article p {
+  line-height: 1.52;
+}
+
+article.post {
+  position: static;
+  visibility: visible;
+}
+
+timeline {
+  display: block;
+  width: 100%;
+}
+
+.axis path {
+  stroke: #85defe;
+  stroke-width: 5;
+  fill: none;
+  shape-rendering: crispEdges;
+}
+.axis circle {
+  stroke: #85defe;
+  stroke-width: 2;
+  fill: #000;
+}
+.axis text {
+  fill: #85defe;
+}
+.axis .lines line {
+  stroke: gray;
+  stroke-width: 1;
+}
+.axis .lines line.solid {
+  stroke: #85defe;
+  stroke-width: 2;
+  shape-rendering: crispEdges;
+}
+.axis .lines line.solid.axis-color {
+  stroke: #85defe;
+}
+.axis .tick text {
+  font-size: 12px;
+}
+.axis .tick text.title, .axis .tick text.title tspan {
+  fill: orange;
+  cursor: pointer;
+}
+.axis .tick.solid text {
+  font-size: 30px;
+}
+.axis .tick.solid text tspan {
+  font-size: 16px;
+}
+.axis .tick.solid.month text {
+  font-size: 20px;
+}
+.axis .tick ul {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  line-height: 20px;
+}
+.axis .tick ul a {
+  color: orange;
+  font-size: 14px;
+}
