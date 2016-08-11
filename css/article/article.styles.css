@@ -7,6 +7,7 @@ article {
   border-radius: 4px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
   color: #17191a;
+  z-index: 1;
   word-break: break-word;
 }
 article h1 {
@@ -14,6 +15,18 @@ article h1 {
 }
 article p {
   line-height: 1.52;
+}
+article sub {
+  float: right;
+}
+article hr {
+  visibility: hidden;
+}
+article a[id] {
+  display: block;
+  margin: -75px 0 75px;
+  width: 100%;
+  border: 1px solid white;
 }
 
 article.post {
